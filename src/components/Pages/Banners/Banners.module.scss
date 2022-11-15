@@ -1,0 +1,60 @@
+.bannersContainer{
+	position: relative;
+	height: 250px;
+	width: 100vw;
+	overflow: hidden;
+	border-bottom: 1px solid var(--lightGrey);
+
+	button{
+		cursor: pointer;
+		background-color: rgba(255,255,255,.9);
+		opacity: 0.6;
+		opacity: 0.6;
+		position: absolute;	
+		border-radius: 50%;
+		border: 1px solid var(--darkGrey);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 10px 15px;
+		top: 50%;
+		transition: 0.3s all ease;
+		i{	
+			color: var(--darkGrey);
+			font-size: 20px;
+		}
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+	.previous{
+		left: 15px;
+		transform: translateY(-50%);
+	}
+	.next{
+		left: calc(100vw);
+		transform: translate(-65px,-50%);
+	}
+	.hide{
+		display: none;
+	}
+
+	.layer{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: row;
+		align-items: center;
+		transition: 0.6s all ease;
+		padding: 0 30px;
+	}
+
+	
+
+	
+
+}

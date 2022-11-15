@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.BillForm{
+	background-color: white;
+	max-width: 80vw;
+	position: relative;
+	top: 20px;
+	.invoiceInfor{
+		position: absolute;
+		top: 270px;
+		right: 120px;
+		p{
+			letter-spacing: 1px;
+			font-weight: 600;
+			font-size: 16px;
+			span{
+				font-size: 15px;
+			}
+		}
+	}
+	.close{
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0px 15px;
+		font-size: 32px;
+		cursor: pointer;
+		transition: all .2s ease;
+		opacity: .7;
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+	.title{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 60px 0;
+		width: 100%;
+		.invoice{
+			width: 35%;
+			text-align: right;
+			background-color: var(--green);
+			padding-left: 150px;
+			h2{
+				display: inline-block;
+				background-color: white;
+				font-size: 38px;
+				font-weight: 500;
+				padding: 0 10px;
+
+			}
+		}		
+		.logo{
+			width: 55%;
+			padding: 5px 300px 5px 0;
+			background-color: var(--green);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				height: 90px;
+				padding: 5px 20px;
+			}
+		}
+	}
+
+	.customer{
+		padding: 0 120px;
+		.invoiceTo{
+			display: inline-block;
+			background-color: var(--lightGrey);
+			padding: 1px 60px 1px 20px;
+			h2{
+				font-size: 18px;
+				font-weight: 600;
+			}
+		}
+		.details{
+			padding: 10px 20px;
+			h2{
+				font-size: 22px;
+				font-weight: 500;
+			}
+			p{
+				i{
+					opacity: 0.8;
+				}
+				font-size: 15px;
+			}
+		}
+	}
+
+	.table{
+		padding: 40px 120px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		table{
+			width: 100%;
+			tr:nth-child(even){
+				background-color: var(--lightGrey);
+			}
+
+			thead{
+				background-color: #3c3c46;
+				tr{
+					th:nth-child(1){
+						text-align: left;
+					}
+					th{
+						font-size: 18px;
+						padding: 8px 30px;
+						color: white;
+						font-weight: 600;
+					}
+				}
+			}
+
+			tbody{
+				tr{
+					td{
+						font-size: 15px;
+						padding: 5px 30px;
+						text-align: center;
+						&:nth-child(1){
+							text-align: left;
+						}
+					}
+				}
+			}
+
+			tfoot{
+				text-align: center;
+				*{
+					font-weight: 600;
+				}
+				tr{
+					td{
+						font-size: 17px;
+					}
+				}
+			}
+		}
+	}
+
+	.infor{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-direction: row;
+		padding: 20px 120px 80px 120px;
+		width: 100%;
+		.payment{
+			width: 42%;
+			.paymentMethod{
+				background-color: var(--green);
+				height: 50px;
+				line-height: 50px;
+				padding: 0 20px;
+				margin-bottom: 10px;
+				h2{
+					font-size: 22px;
+					color: white;
+					font-weight: 600;
+					letter-spacing: 2px;
+				}
+
+			}
+			.details{
+				padding: 0 20px 10px 20px;
+				border-bottom: 3px solid var(--lightGrey);
+				.method{
+					padding-bottom: 5px;
+					h2{
+						font-size: 16px;
+						font-weight: 600;
+					}
+					p{
+						font-size: 13px;
+					}
+				}
+			}
+			.thanks{
+				padding: 5px 20px;
+				p{
+					font-size: 14px;
+					font-weight: 600;
+				}
+			}
+		}
+
+		.signature{
+			width: 42%;
+
+			.total{
+				height: 50px;
+				line-height: 50px;
+				padding: 0 20px;
+				margin-bottom: 10px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: var(--green);
+				padding: 5px 20px;
+				h2{
+					font-size: 22px;
+					color: white;
+					font-weight: 600;
+					letter-spacing: 2px;
+				}
+
+			}
+
+			.sign{
+				width: 100%;
+				height: 150px;
+				line-height: 150px;
+				text-align: right;
+				padding: 0 30px;
+				h1{
+					font-size: 46px;
+					opacity: 0.8;
+					font-family: 'Dancing Script';
+				}
+			}
+		}
+	}
+
+	footer{
+		background-color: #3c3c46;
+		opacity: 1;
+		padding: 20px 120px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		*{
+			color: white;
+		}
+		.term{
+			width: 55%;
+			opacity: 0.8;
+			h2{
+				font-size: 13px;
+				font-weight: 600;
+				padding: 5px  0;
+			}
+			p{
+				font-size: 10px;
+			}
+		}
+		.companyAddress{
+			width: 35%;
+			opacity: 0.8;
+			h2{
+				font-size: 14px;
+				font-weight: 600;
+				padding: 5px  0;
+			}
+			p{
+				font-size: 11px;
+				i{
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+}

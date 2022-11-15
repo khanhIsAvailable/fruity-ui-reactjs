@@ -1,0 +1,18 @@
+.sidebar{
+	position: absolute;
+	display: inline-block;
+	padding: 30px 10px;
+	max-width: 25%;
+	border-right: 1px solid var(--lightGrey);
+	background: white;
+	transition: .3s all ease ;
+	z-index: 10;
+	min-height: 100vh;
+}
+
+
+.fixed{
+	position: fixed;
+	top: 86px;
+	left: 0;
+}

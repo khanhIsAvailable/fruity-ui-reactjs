@@ -1,0 +1,18 @@
+.productsContainer{
+	margin-left: 22%;
+	background: var(--lightGrey);
+	.grid{
+		padding: 30px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		flex-wrap: wrap;
+
+		.seemore{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	}	
+	
+}

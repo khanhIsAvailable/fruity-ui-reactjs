@@ -1,0 +1,45 @@
+.Cart{
+	background-color: var(--green);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 110px;
+	height: 110px;
+	position: fixed;
+	right: -10px;
+	top: 50%;
+	cursor: pointer;
+	border-radius: 10px;
+	opacity: 0.8;
+	transition: 0.4s all ease;
+	&:hover{
+		opacity: 1	;
+	}
+
+	h2{
+		text-align: center;
+		padding: 10px 10px 10px 5px;
+		i{
+			color : var(--lightGrey);
+			padding: 5px;
+			font-size: 16px;
+		}
+		font-size: 14px;
+		color : var(--lightGrey);
+	}
+
+	.price{
+		display: inline-flex;
+		width: 80px;
+		height: 40px;
+		border-radius: 10px;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--lightGrey);
+		p{
+			color : var(--green);
+			font-weight: 900;
+		}
+	}
+}

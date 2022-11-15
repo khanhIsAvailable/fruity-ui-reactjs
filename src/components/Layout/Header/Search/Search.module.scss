@@ -1,0 +1,99 @@
+.search{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row-reverse;
+	background-color: var(--lightGrey);
+	box-sizing: unset;
+	border-radius: 8px;
+	border: 1px solid transparent;
+	transition: 0.3s all ease;
+
+
+	&:focus-within{
+		border-color: var(--green);
+	}
+
+	.searchBar{
+		position: relative;
+		.input{
+			width: 280px;
+			height: 40px;
+			color: var(--darkGrey);
+			background-color: transparent;
+			box-sizing: unset;
+			padding: 0 20px
+		}
+
+		
+		.cancel{
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			transition: 0.3s all ease;
+			cursor: pointer; 
+			&:hover{
+				color: var(--green);
+				transform: translateY(-50%) rotate(-15deg);
+			}
+		}
+	}
+	.button{
+		cursor: pointer;
+		opacity: 0.8;
+		transition: 0.3s all ease;
+		&:hover{
+			opacity: 1;
+		}
+	}
+
+}
+
+.hide{
+	display: none;
+}
+
+.M{
+	.searchBar{
+
+	}
+		.button{
+			cursor: unset;
+			background-color: transparent;
+			padding: 0 0px 0 20px;
+			color: white;
+			.glass, p {
+				color: var(--green);
+			}
+			.searchContent{
+				display: none;
+			}
+		}
+}
+
+.L{
+	flex-direction: row;
+	.searchBar{
+		.input{
+			width: 600px;
+			height: 55px;
+		}
+	}
+	.button{
+		background: var(--green);
+		height: 55px;
+		border-radius: 0 5px 5px 0;
+		padding: 0 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.glass, p {
+			color: white;
+		}
+		.searchContent{
+			display: block;
+			padding: 0 10px
+		}
+	}
+}

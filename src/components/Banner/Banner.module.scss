@@ -1,0 +1,65 @@
+.banner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 415px !important;
+	height: 180px;
+	flex: 1;
+	border-radius: 5px;
+
+	& + .banner{
+		margin-left: 20px;
+	}
+
+	.bannerContentContainer{
+		
+		padding-left: 30px;
+
+		.bannerContent{
+				
+			h2{
+				color: white;
+				font-size: 20px;
+				font-weight: 700;
+			}
+
+			span{
+				display: block;
+				color: white;
+				font-weight: 300;
+				font-size: 13px;
+				margin: 5px 0 15px 0;
+			}
+		}
+	}
+
+	img{
+		width: 170px;
+		padding-right: 20px;
+	}
+}
+
+
+.blue{
+	background: linear-gradient(90deg, #66C1F9 0%, 
+								rgba(127, 198, 242, 0.786458) 77.6%, 
+								#79C8F5 99.99%, #66C1F9 100%);
+}
+
+.green{
+	background: linear-gradient(100.23deg, #7CCC9D 0%, 
+				rgba(152, 203, 179, 0.786458) 81.94%, 
+				#98CBB3 88.7%, #98CBB3 96.04%);
+}
+
+.pink{
+	background: linear-gradient(101.87deg, #E77DCA 0%, 
+				rgba(225, 140, 201, 0.786458) 79.66%, 
+				#E77DCA 101.88%, rgba(231, 125, 202, 0) 100%);
+}
+
+.orange{
+	background: linear-gradient(90deg, #FFAE5F 0%, 
+				rgba(252, 187, 122, 0.786458) 86.54%, 
+				#FCBB7A 110.71%, rgba(231, 125, 202, 0) 110.72%);
+}

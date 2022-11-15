@@ -1,0 +1,155 @@
+.contact{
+	min-width: 1280px;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: row;
+	.contactDetails{
+		padding: 10px;
+		background-color: white;
+		.contactIllustration{
+			padding: 20px 0 40px 0;
+			width: 345px;
+			display: flex;
+			justify-content: center;
+			img{
+				width: 300px;
+			}
+		}
+		.details{
+			padding: 20px 20px 0 30px;
+			.infor{
+				padding: 18px 0;
+				h2{
+					font-weight: 500;
+					font-size: 16px;
+				}
+				p{
+					padding: 5px 0;
+					font-size: 14px;
+				}
+			}
+			.logo{
+				width: 100%;
+				h2{
+					font-weight: 500;
+					font-size: 16px;						
+				}
+				a{
+					font-size: 22px;
+					margin:10px 20px 0 0;
+					opacity: 0.7;
+					transition: all 0.2s ease;
+					cursor: pointer;
+					&:hover{
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+	}
+
+	.form{
+		background-color: white;
+		max-width: 850px;
+		padding: 25px;
+		h2{
+			padding: 10px 0;
+			font-size: 23px;
+			font-weight: 600;
+		}
+	}
+}
+
+form{
+	padding: 20px 0;
+
+
+	.inputField{
+		padding: 20px 30px 20px 0;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-direction: column;
+		width: 800px;
+
+		input{
+			border: 1px solid #d2d6dc;
+			transition: all 0.2s ease;
+			height: 45px;
+			border-radius: 6px;
+			width: 100%;
+			padding: 0 14px;
+			&:focus{
+				border: 1px solid var(--green);
+			}	
+		}
+		textarea{
+			height: 200px;	
+			border-radius: 6px;
+			width: 100%;
+			padding: 10px 14px;
+			outline: none;
+			border: 1px solid #d2d6dc;		
+			&:focus{
+				border: 1px solid var(--green);
+			}
+								
+		}
+		
+		label{
+			font-weight: 400;
+			font-size: 14px;
+		}
+
+	}
+
+	.pair{
+		display: inline-flex;
+		.inputField{
+			width: 400px;
+		}
+	}
+
+}
+
+.modal{
+background-color: white;
+min-width: 700px;
+min-height: 200px;
+position: relative;
+border-radius: 5px;
+overflow: hidden;
+text-align: center;
+.content{
+	padding: 50px 20px;
+	text-align: center;
+	h2{
+		font-size: 26px;
+		font-weight: 500;
+		color: var(--green);
+	}
+	p{
+		font-size: 26px;
+		padding: 10px;
+	}
+	span{
+		font-size: 16px;
+	}
+}
+}
+
+.progress{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	.bar{
+		width: 1%;
+		height: 3px;
+		background-color: var(--green);
+	}
+}
+

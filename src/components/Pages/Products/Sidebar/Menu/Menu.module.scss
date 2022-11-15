@@ -1,0 +1,25 @@
+.menu{
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 400px;
+	.childrenMenu{
+		display: flex;
+		flex-direction: column;
+	}
+	.hide{
+		display: none;
+	}
+
+}
+
+.noActive{
+    background-color: white;
+    color: var(--textColor);
+    svg{
+    	path{
+		    fill: var(--textColor);
+    	}
+    }
+}

@@ -1,0 +1,50 @@
+.offersGrid{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 0 100px;
+	flex-direction: row;
+	align-items: flex-start;
+
+	.offerWrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		background-color: white;
+		margin: 30px 20px;
+		width: 200px;
+		height: 230px;
+		border-radius: 8px;
+		border: 1px solid var(--darkGrey);
+		.ticket{
+			opacity: 0.8;
+			text-align: center;
+			line-height: 160px;
+			min-width: 200px;
+			height: 160px;
+			border-radius: 6px;
+			outline: 15px solid white;
+			border: 2px dashed white;
+			h2{
+				font-weight: 700;
+				color: white;
+				font-size: 40px;
+			}
+		}
+
+		.code{
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			align-items: center;
+			padding:20px 0px 10px 25px;
+			h2{
+				font-size: 16px;
+				font-weight: 500;
+
+			}
+		}
+	}
+}

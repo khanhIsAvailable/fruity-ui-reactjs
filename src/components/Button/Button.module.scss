@@ -1,0 +1,154 @@
+
+.button{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 7px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 10px;
+    opacity: 0.8;
+    padding: 0 20px;
+    transition: 0.3s all ease;
+    
+    &:hover{
+        opacity: 1;
+    }
+
+    
+
+    span{
+        transition: 0.3s all ease;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        i{
+            font-size: 12px;
+            transition: 0.3s all ease;
+        }
+    }
+
+    svg{
+        left: 15px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        path{
+            transition: 0.3s all ease;
+            
+        }
+        
+    }
+
+    .leftIcon{
+        left: 15px;
+    }
+    .rightIcon, .hiddenIcon{
+        right: 15px;
+    }
+
+}
+.hide{
+    display: none;
+}
+
+
+.basic{
+    justify-content: flex-start;
+    padding-left: 40px;
+    background-color: white;
+    color: var(--textColor);
+    font-size: 14px;
+    span{
+        i{
+            color: var(--textColor);    
+        }
+    }
+    &:hover{
+        color: var(--green);
+        span{
+            i{
+                color: var(--green);    
+            }
+        }
+        svg{
+            path{
+                fill: var(--green);    
+            }
+        }
+
+    }
+}
+
+.primary{
+    background-color: var(--green);
+    color: white;
+}
+
+.secondary{
+    background-color: white;
+    color: var(--green);
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+
+.L{
+    min-width: 200px;
+}
+
+.XL{
+    min-width: 250px;
+}
+
+.M{
+    min-width: 90px;
+}
+
+.S{
+    min-width: 60px;
+}
+
+.active{
+    color: var(--green);
+    span{
+        i{
+            color: var(--green);    
+        }
+    } 
+    svg{
+        path{
+            fill: var(--green);
+        }
+    }
+}
+
+
+.r40px{
+    border-radius: 40px;
+}
+.h80{
+    height: 80%;
+}
+
+.h40px{
+    height: 40px;
+}
+.op1{
+    opacity: 1;
+}
+
+.green{
+    border: 1px solid var(--green);
+}
+
+.fz17px{
+    font-size: 17px;
+}
